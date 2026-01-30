@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "title": "Classic Spaghetti Carbonara",
+    "description": "Creamy, comforting, and quick to make.",
+    "image": "/assets/ramen.svg",
+    "ingredients": ["200g spaghetti","100g pancetta","2 large eggs","50g pecorino cheese","black pepper"],
+    "instructions": "Cook pasta; fry pancetta; mix eggs and cheese; combine off-heat and toss quickly with pasta. Season with pepper."
+  },
+  {
+    "id": "2",
+    "title": "Avocado Toast with Chili Flakes",
+    "description": "A bright, healthy breakfast or snack.",
+    "image": "/assets/pancakes.svg",
+    "ingredients": ["2 slices bread","1 ripe avocado","lemon juice","chili flakes","salt"],
+    "instructions": "Toast bread; smash avocado with lemon & salt; spread and sprinkle chili flakes."
+  },
+  {
+    "id": "3",
+    "title": "Ramen Noodles",
+    "description": "Warm, slurpable noodles in savory broth.",
+    "image": "/assets/ramen.svg",
+    "ingredients": ["200g ramen","2 cups broth","1 egg","green onions","soy sauce"],
+    "instructions": "Cook noodles in broth; top with soft-boiled egg and scallions."
+  },
+  {
+    "id": "4",
+    "title": "Lemon Pancakes",
+    "description": "Light pancakes with a bright lemon twist.",
+    "image": "/assets/pancakes.svg",
+    "ingredients": ["1 cup flour","1 cup milk","1 egg","zest of 1 lemon","2 tbsp sugar"],
+    "instructions": "Mix batter; cook on griddle until golden; serve with syrup and lemon zest."
+  },
+  {
+    "id": "5",
+    "title": "Summer Salad",
+    "description": "Fresh greens with a zesty dressing.",
+    "image": "/assets/salad.svg",
+    "ingredients": ["mixed greens","cherry tomatoes","cucumber","olive oil","lemon"],
+    "instructions": "Toss ingredients with olive oil and lemon; season to taste."
+  }
+]
