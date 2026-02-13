@@ -11,21 +11,24 @@ export default function Home() {
         <div className="container">
           <h2>Collections</h2>
           <div className="collection-list">
-            <article className="collection-card" style={{ backgroundImage: "url('/assets/ramen.svg')" }}>
+            <article className="collection-card">
+              <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=800&q=80" alt="Comfort Noodles" />
               <div className="collection-overlay">
                 <h3>Comfort Noodles</h3>
                 <p>Warm, slurpable bowls for cozy nights.</p>
               </div>
             </article>
 
-            <article className="collection-card" style={{ backgroundImage: "url('/assets/pancakes.svg')" }}>
+            <article className="collection-card">
+              <img src="https://images.unsplash.com/photo-149485981460c-38af4a3ce429?auto=format&fit=crop&w=800&q=80" alt="Breakfast & Brunch" />
               <div className="collection-overlay">
                 <h3>Breakfast & Brunch</h3>
                 <p>Sweet and savory starts to your day.</p>
               </div>
             </article>
 
-            <article className="collection-card" style={{ backgroundImage: "url('/assets/salad.svg')" }}>
+            <article className="collection-card">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Fresh Salads" />
               <div className="collection-overlay">
                 <h3>Fresh Salads</h3>
                 <p>Bright, healthy, and refreshing bowls.</p>

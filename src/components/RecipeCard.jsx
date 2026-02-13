@@ -4,7 +4,7 @@ export default function RecipeCard({ recipe }) {
   return (
     <article className="recipe-card">
       {recipe.image && (
-        <div className="img-wrap" style={{ backgroundImage: "url('/assets/noodles.svg')" }}>
+        <div className="img-wrap">
           <img src={recipe.image} alt={recipe.title} />
         </div>
       )}

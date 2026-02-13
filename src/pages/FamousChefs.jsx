@@ -1,9 +1,9 @@
 import React from 'react'
 
 const chefs = [
-  { id: '1', name: 'Aiko Tanaka', bio: 'Ramen specialist and broth master.', image: '/assets/chef-aiko.svg' },
-  { id: '2', name: 'Marco Ricci', bio: 'Traditional Italian techniques with modern twists.', image: '/assets/chef-marco.svg' },
-  { id: '3', name: 'Lena Martinez', bio: 'Creative brunch and pastry chef.', image: '/assets/chef-lena.svg' }
+  { id: '1', name: 'Aiko Tanaka', bio: 'Ramen specialist and broth master.', image: 'https://images.unsplash.com/photo-1581299894007-aaa50297cf16?auto=format&fit=crop&w=400&q=80' },
+  { id: '2', name: 'Marco Ricci', bio: 'Traditional Italian techniques with modern twists.', image: 'https://images.unsplash.com/photo-1583394238232-9636231d3604?auto=format&fit=crop&w=400&q=80' },
+  { id: '3', name: 'Lena Martinez', bio: 'Creative brunch and pastry chef.', image: 'https://images.unsplash.com/photo-1595273670150-db0a3d39074f?auto=format&fit=crop&w=400&q=80' }
 ]
 
 export default function FamousChefs() {
@@ -15,11 +15,10 @@ export default function FamousChefs() {
           <article className="chef-card" key={c.id}>
             <img
               className="chef-avatar"
-              src={`/assets/photos/${c.name.toLowerCase().replace(/\s+/g, '-')}.jpg`}
-              onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = c.image }}
+              src={c.image}
               alt={c.name}
             />
-            <div>
+            <div className="chef-info">
               <h3>{c.name}</h3>
               <p>{c.bio}</p>
             </div>

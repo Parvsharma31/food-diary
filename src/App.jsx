@@ -46,7 +46,7 @@ export default function App() {
     <div className="app">
       <header className="site-header">
         <div className="header-inner">
-          <h1 className="site-title">Food Diary</h1>
+          <a href="#home" className="site-title">Food Diary</a>
           <nav className="site-nav">
             <a href="#home" className={active === 'home' ? 'active' : ''}>Home</a>
             <a href="#cuisines" className={active === 'cuisines' ? 'active' : ''}>Cuisines</a>
