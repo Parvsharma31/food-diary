@@ -24,10 +24,7 @@ export default function FeaturedCarousel() {
   return (
     <div className="featured-carousel">
       {items.map((r, i) => (
-        <div
-          className={`featured-item ${i === index ? 'active' : ''}`}
-          key={r.id}
-        >
+        <div className={`featured-item ${i === index ? 'active' : ''}`} key={r.id}>
           {r.image && <img src={r.image} alt={r.title} />}
           <div className="featured-meta">
             <h3>{r.title}</h3>
@@ -35,6 +32,16 @@ export default function FeaturedCarousel() {
           </div>
         </div>
       ))}
+      <div className="carousel-dots">
+        {items.map((_, i) => (
+          <button
+            key={i}
+            className={`carousel-dot ${i === index ? 'active' : ''}`}
+            onClick={() => setIndex(i)}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
+      </div>
     </div>
   )
 }

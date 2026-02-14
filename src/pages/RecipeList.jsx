@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import RecipeCard from '../components/RecipeCard'
-import FeaturedCarousel from '../components/FeaturedCarousel'
 
 export default function RecipeList() {
   const [recipes, setRecipes] = useState([])
@@ -12,14 +11,11 @@ export default function RecipeList() {
       .catch(err => console.error('Failed to load recipes', err))
   }, [])
 
-  if (recipes.length === 0) return <p>Loading recipes...</p>
+  if (recipes.length === 0) return <p style={{ textAlign: 'center', padding: '2rem', color: '#6B5B4E' }}>Loading recipes...</p>
 
   return (
-    <div>
-      <FeaturedCarousel recipes={recipes} />
-      <section className="recipe-list">
-        {recipes.map(r => <RecipeCard key={r.id} recipe={r} />)}
-      </section>
+    <div className="recipe-list">
+      {recipes.map((r, i) => <RecipeCard key={r.id} recipe={r} delay={i * 0.1} />)}
     </div>
   )
 }
