@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react'
+import { useTheme } from './context/ThemeContext'
 import Home from './pages/Home'
 import Cuisines from './pages/Cuisines'
 import FamousChefs from './pages/FamousChefs'
@@ -7,6 +8,7 @@ import LoginModal from './components/LoginModal'
 
 export default function App() {
   const [active, setActive] = useState('home')
+  const { theme, toggleTheme } = useTheme()
   const [user, setUser] = useState(() => {
     try { return JSON.parse(localStorage.getItem('vibe_user')) } catch { return null }
   })
@@ -75,6 +77,9 @@ export default function App() {
             <a href="#cuisines" className={active === 'cuisines' ? 'active' : ''} onClick={handleNavClick}>Cuisines</a>
             <a href="#chefs" className={active === 'chefs' ? 'active' : ''} onClick={handleNavClick}>Famous Chefs</a>
             <a href="#about" className={active === 'about' ? 'active' : ''} onClick={handleNavClick}>About Us</a>
+            <button className="btn-ghost theme-toggle" onClick={toggleTheme} aria-label="Toggle theme" style={{ padding: '0.5rem', fontSize: '1.2rem', lineHeight: 1 }}>
+              {theme === 'light' ? '🌙' : '☀️'}
+            </button>
             {user ? (
               <button className="btn-ghost" onClick={handleLogout}>Hi, {user.name} — Logout</button>
             ) : (
